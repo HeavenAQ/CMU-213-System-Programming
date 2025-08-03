@@ -1,0 +1,44 @@
+BasedOnStyle: LLVM
+Language: Cpp
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+
+# Function declaration and definition
+AlignAfterOpenBracket: Align
+AlignOperands: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveAssignments: false
+
+# Braces
+BreakBeforeBraces: Attach # { stays on the same line for function
+AllowShortFunctionsOnASingleLine: None
+
+# Spaces
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: true
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceInEmptyParentheses: false
+
+# Function arguments
+BinPackArguments: false # Keep each argument on its own line if they don't fit
+BinPackParameters: false
+AllowAllArgumentsOnNextLine: false
+
+# Comments
+CommentPragmas: "^ IWYU pragma:"
+ReflowComments: true
+SpacesBeforeTrailingComments: 1
+
+# Line breaks
+ColumnLimit: 80
+
+# Pointer alignment
+PointerAlignment: Left
+
+# Misc
+SortIncludes: false
