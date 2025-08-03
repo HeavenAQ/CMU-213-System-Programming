@@ -2,9 +2,11 @@ name: Data Lab CI
 
 on:
   push:
+    branches: ["**"] # Trigger on push to any branch
     paths:
       - "data-lab/**"
   pull_request:
+    branches: ["**"] # Trigger on pull requests from any branch
     paths:
       - "data-lab/**"
 
